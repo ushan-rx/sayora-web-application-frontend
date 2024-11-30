@@ -10,4 +10,11 @@ body {
   :root {
     --radius: 0.5rem;
   }
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+
 }
+
+
