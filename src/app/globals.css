@@ -4,17 +4,72 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--foreground)
 }
 
 @layer base {
   :root {
     --radius: 0.5rem;
   }
+
   :root {
     --background: #ffffff;
     --foreground: #171717;
-  }
 
+    --success: #22C55E;
+    --warning: #D43B3B;
+    --status: #0EA5E9;
+    --error: #F97316;
+
+    --primary: 186deg 78% 42%;
+    --primary-foreground: 210deg 40% 98%;
+
+    --secondary: 104deg 100% 72%;
+    --secondary-foreground: 195deg 100% 5%;
+
+    /* Muted backgrounds such as <TabsList />, <Skeleton /> and <Switch /> */
+    --muted: 180deg 100% 94%;
+    --muted-foreground: 195deg 100% 5%;
+
+    --accent: 216deg 100% 97%;
+    --accent-foreground: 0deg 0% 16%;
+
+    /* Used for focus ring */
+    --ring: 186deg 78% 42%;
+
+
+
+    /* gradient 1 colors */
+    --gradient-cream: 30deg 100% 96%;
+    --gradient-blue: 177deg 65% 93%;
+    --gradient-purple: 280deg 100% 96%;
+
+
+  }
 }
 
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  --primary: 186deg 78% 42%;
+  --primary-foreground: 0deg 0%, 100%;
+
+  --secondary: 104deg 100% 30%;
+  --secondary-foreground: 0deg 0% 100%;
+
+  --muted: 188deg 74% 8%;
+  --muted-foreground: 0deg 0%, 90%;
+
+  --accent: 222deg 100% 9%;
+  --accent-foreground: 210deg 40% 88%;
+
+  --ring: 186deg 76% 36%;
+
+  --gradient-cream: 30deg 100% 9%;
+  --gradient-blue: 177deg 65% 14%;
+  --gradient-purple: 280deg 100% 9%;
+
+}
 
