@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 export default {
-  darkMode: 'selector',
+  darkMode: ['class'],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,7 +14,6 @@ export default {
       lg: '976px',
       xl: '1440px',
     },
-
     borderRadius: {
       lg: 'var(--radius)',
       md: 'calc(var(--radius) - 2px)',
@@ -26,26 +25,19 @@ export default {
         current: 'current',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-
         primary: 'hsl(var(--primary))',
         'primary-foreground': 'hsl(var(--primary-foreground))',
         secondary: 'hsl(var(--secondary))',
         'secondary-foreground': 'hsl(var(--secondary-foreground))',
-
         muted: 'hsl(var(--muted))',
         'muted-foreground': 'hsl(var(--muted-foreground))',
-
         accent: 'hsl(var(--accent))',
         'accent-foreground': 'hsl(var(--accent-foreground))',
-
         ring: 'hsl(var(--ring))',
-
         'gradient-cream': 'hsl(var(--gradient-cream))',
         'gradient-blue': 'hsl(var(--gradient-blue))',
         'gradient-purple': 'hsl(var(--gradient-purple))',
-
         pelorous: {
-          DEFAULT: '#16acbd',
           '50': '#eefdfc',
           '100': '#d3f9fa',
           '200': '#acf0f5',
@@ -57,6 +49,7 @@ export default {
           '800': '#1d5e6d',
           '900': '#1c4e5d',
           '950': '#0d333f',
+          DEFAULT: '#16acbd',
         },
         gulf_blue: {
           '50': '#e7f5ff',
@@ -83,6 +76,16 @@ export default {
           '800': '#00768f',
           '900': '#014f63',
           '950': '#004054',
+        },
+        sidebar: {
+          DEFAULT: 'hsl(var(--sidebar-background))',
+          foreground: 'hsl(var(--sidebar-foreground))',
+          primary: 'hsl(var(--sidebar-primary))',
+          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+          accent: 'hsl(var(--sidebar-accent))',
+          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+          border: 'hsl(var(--sidebar-border))',
+          ring: 'hsl(var(--sidebar-ring))',
         },
       },
     },
